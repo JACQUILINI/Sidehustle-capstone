@@ -259,8 +259,8 @@ section.scontainer>div{
     align-content: center;
     position: absolute;
     z-index: 1;
-    right: 25%;
-    left:25%;
+    right: 10%;
+    left:20%;
     top:190rem;
     background-color: #1c2431;
     width:50%;
