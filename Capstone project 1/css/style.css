@@ -1,0 +1,269 @@
+body{
+    background-color: #181f2a;
+    color: white;
+    
+}
+/*nav section*/
+nav{
+    box-sizing: border-box;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    padding: 0 15px;
+    padding-top: 2rem;
+}
+.nav-container{
+    box-sizing: border-box;
+    width: 50%;
+    height: 50px;
+    margin: 1rem;
+    padding-left: 2rem;
+}
+.menu{
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content:end;
+}
+nav>div>div>a{
+    box-sizing: border-box;
+    height: 30px;
+    margin-right: 2rem;
+    width:auto;
+    text-align:center;
+    padding-top: 5px;
+    font-family: 'Raleway';
+    font-weight:400;
+    color: white;
+    transition: all 0s;
+}
+a{
+    text-decoration: none;
+}
+nav>div>div>a:hover{
+    font-weight: 700;
+    text-decoration: underline;
+}
+header{
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+header>div{
+    display: block;
+    align-items: center;
+    flex-direction: column;
+    width: 0 auto;
+    
+}
+header>div>img{
+    width: 34.375rem;
+    height: 28.125rem;
+}
+#header{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 50%;
+    height: 30rem;
+    text-align: center;
+    
+}
+
+.child1{
+    width: 100%;
+}
+h2{
+    font-family: 'Raleway';
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.header-cont-3{
+    box-sizing: border-box;
+    width: 60%;
+    height: 11rem;
+    width: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    transition: all 0s;
+}
+p:hover{
+    font-weight: 700;
+}
+div.buttons{
+    box-sizing: border-box;
+    width: 40%;
+    height: 6rem;
+    /*background-image:linear-gradient(to right, #65e2d9, #339ecc);
+    This gradient funtion didn't work on my chrome.. I and my team would like to know why*/
+    background-color: #339ecc;
+    border-radius: 20px;
+    padding-top: 6px;
+}
+div.buttons>a{
+    color:white;
+    font-size: .875rem;
+    font-weight: 400px;
+    font-family: 'Raleway';
+    transition: all 0s;
+}
+div.buttons>a:hover{
+    font-weight: 700;
+}
+
+main{
+    background-color: #181f2a;
+    background-image: url('../images/bg-curvy-desktop.svg');
+    display: flex;
+    flex-flow: column;
+    height: 140rem;
+}
+section.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-items: center;
+    
+    align-items: center;
+}
+div.top, div.bottom{
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+div.body-container{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding-top: 4rem;
+    margin: 0 3rem;
+    width: 100%;
+}
+h3{
+    font-family: 'Raleway';
+    font-size: 14px;
+}
+.small{
+    font-size: 12px;
+    justify-content: center;
+}
+.paragraph{
+    text-align: center;
+    width:100%;
+}
+section.productive{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+}
+section>div.container-3{
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: right;
+    margin: 3rem;
+  
+}
+#prodimg{
+    width: 100%;
+    height: 35rem;
+}
+.right{
+    justify-content: start;
+}
+.half{
+    width: 70%;
+}
+span{
+    color: #65e2d9;
+    text-decoration-line: underline;
+}
+section.testimonial{
+    display: flex;
+    padding: 2rem 10rem;
+    
+}
+.testimonies{
+    display: flex;
+    padding-left: 5px;
+    justify-content: space-around;
+}
+.testimony{
+    background-color: #202a3c;
+    padding: 2rem;
+    margin:  0 2rem 0 0;
+}
+.img{
+    height: 35px;
+}
+
+.person{
+    border-radius: 100px;
+    height: 60px;
+}
+.cont1{
+    display: flex;
+    border-top: 3rem;
+    justify-content: start;
+    align-items: left;
+}
+.expression{
+    height: 8rem;
+}
+.dp{
+    box-sizing: border-box;
+    border-radius: 10%;
+}
+.dp, .details{
+    margin-right: 2rem;
+  
+}
+.details{
+    height: 60px;
+    padding: 0;
+}
+.name{
+    font-weight: 700;
+}
+
+footer{
+    padding: 10rem 10rem;
+    background-color: #0b1523;
+    display: flex;
+    flex-direction: column;    
+}
+.fylo{
+    width: 8rem;
+}
+#fcontainer{
+    display: flex;
+    padding-top: 5rem;
+    justify-items: flex-start;
+    
+    
+}
+#fcontainer>div{
+    margin-right: 10rem;
+}
+#f1{
+    width: 20%;
+}
