@@ -8,9 +8,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100&family=Raleway:wght@100&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100&family=Open+Sans:wght@300&family=Raleway:wght@100&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/8ef77fdfca.js" crossorigin="anonymous"></script>
         <title>Fylo</title>
     </head>
     <body>
@@ -197,22 +196,22 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section class="scontainer"> 
                 <div>
                     <div>
-                        <h3> Get early access today</h3>
+                        <h2> Get early access today</h2>
                     </div>
-                    <div><p>It only takes a minute to sign uo and our free starter tier is extremely generous. If you have any
-                        question(s), our support team would be happy to help you.</p>
+                    <div id="intro"><p>It only takes a minute to sign uo and our free starter tier is extremely generous. 
+                        If you have any <br> question(s), our support team would be happy to help you.</p>
                     </div>
-                    <div>
+                    <div id="signup">
                         <div class="form">
                             <form action="get">
                                 <label for="email"></label>
                                 <input type="email" placeholder="email@example .com">
                             </form>
                         </div>
-                        <div class="form" id="blue"><a href="">Get Started For Free</a></div>
+                        <div  class="buttons" id="blue"><a href="">Get Started For Free</a></div>
                     </div>
                 </div>
             </section>
@@ -224,18 +223,20 @@
             <div id="fcontainer">
                 <div id="f1">
                     <div class="locationicon"><i class="fa-solid fa-location-dot"></i></div>
-                    <div class="text">Lorem ipsum dolor sit amet, consecteur
-                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua
+                    <div class="text"><p class="small">Lorem ipsum dolor sit amet, consecteur
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua</p>
                     </div>
                 </div>
                 <div id="f2">
-                    <div class="line">
-                        <div class="phoneicon"></div>
-                        <div class="digits" ></div>
+                    <div >
+                        <div class="phoneicon"><i class="fa-solid fa-circle-phone"></i></div>
+                        
+                        <div class="digits" ><p class="small">+1-543-123-4567</p></div>
                     </div>
-                    <div class="line">
-                        <div class="gmaillogo"><p>+1-543-123-4567</p></div>
-                        <div class="email"><p>example@fylo.com</p></div>
+                    <div>
+
+                        <div class="emaillogo"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="email"><p class="small">example@fylo.com</p></div>
                     </div>
                 </div>
                 <div id="f3">
@@ -252,7 +253,7 @@
                 <div id="f5">
                     <div><i class="fa-brands fa-facebook-f"></i></div>
                     <div><i class="fa-brands fa-twitter"></i></div>
-                    <div><i class="fa-brands fa-instagram-square"></i></div>
+                    <div><i class="fa-brands fa-instagram"></i></div>
                 </div>
             </div>
         </Footer>    

@@ -35,11 +35,12 @@ nav>div>div>a{
     padding-top: 5px;
     font-family: 'Raleway';
     font-weight:400;
-    color: white;
+    color: #ffffff;
     transition: all 0s;
 }
 a{
     text-decoration: none;
+    color:#ffffff;
 }
 nav>div>div>a:hover{
     font-weight: 700;
@@ -111,9 +112,13 @@ div.buttons{
     height: 6rem;
     /*background-image:linear-gradient(to right, #65e2d9, #339ecc);
     This gradient funtion didn't work on my chrome.. I and my team would like to know why*/
-    background-color: #339ecc;
+    background-color: #65e2d9;
     border-radius: 20px;
-    padding-top: 6px;
+    padding-top: 6px; 
+    transition: all 0s;
+}
+div.buttons:active{
+    background-color: #339ecc;
 }
 div.buttons>a{
     color:white;
@@ -124,6 +129,7 @@ div.buttons>a{
 }
 div.buttons>a:hover{
     font-weight: 700;
+    
 }
 
 main{
@@ -131,7 +137,7 @@ main{
     background-image: url('../images/bg-curvy-desktop.svg');
     display: flex;
     flex-flow: column;
-    height: 140rem;
+    height: 135rem;
 }
 section.container{
     display: flex;
@@ -244,9 +250,80 @@ section.testimonial{
 .name{
     font-weight: 700;
 }
+select.scontainer{
+    display: flex;
+}
+section.scontainer>div{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    position: absolute;
+    z-index: 1;
+    right: 25%;
+    left:25%;
+    top:190rem;
+    background-color: #1c2431;
+    width:50%;
+    height: auto;
+    padding: 0 5rem 0 5rem;
+
+}
+section.scontainer>div>div{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  
+}
+#intro{
+    text-align: center;
+}
+#signup{
+    align-items: center;
+    width: 100%;
+    padding-top: 3rem;
+    justify-content: center;
+
+}
+#signup>div{
+    margin-right:1rem ;
+}
+.form{
+    box-sizing: border-box;
+    width: 70%;
+    height: 30px;
+    justify-content: end;
+    align-items: flex-end;
+    padding-left: 3rem;
+    
+}
+input{
+    width: 85%;
+    height: 30px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+#blue{
+    width: 25%;
+    height: 30px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #65e2d9;
+    justify-content: start;
+    align-items: flex-start;
+    padding-right: 3rem;
+    transition: all 0s;
+    padding-left: 3rem;
+
+}
+#blue:active{
+    background-color: #339ecc;
+}
+   
+
+
 
 footer{
-    padding: 10rem 10rem;
+    padding: 10rem 0 0 10rem ;
     background-color: #0b1523;
     display: flex;
     flex-direction: column;    
@@ -257,13 +334,69 @@ footer{
 #fcontainer{
     display: flex;
     padding-top: 5rem;
-    justify-items: flex-start;
+    align-items: flex-start;
+    
     
     
 }
 #fcontainer>div{
-    margin-right: 10rem;
+   
+    margin-right: 8rem;
 }
 #f1{
-    width: 20%;
+    
+    width: 23%;
+    display:flex ;
+
+}
+#f1>div{
+    
+    margin-right: 1rem;
+}
+.locationicon{
+    padding-top: 1.3rem;
+}
+.text{
+    width: 100%;
+}
+#f2{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+ 
+}
+#f2>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    justify-items: first baseline;
+}
+#f2>div>div{
+    margin-right: 1rem;
+    padding-bottom: 1rem;
+    height: 2rem;
+    
+}
+.emaillogo{
+    padding-top: 1.2rem;
+}
+#f5{
+    display: flex;
+    justify-items: first baseline;
+    padding-top: 1.5rem;
+}
+#f5>div{
+    box-sizing: border-box;
+    border: solid 1px #ffffff;
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    align-content: center;
+    padding-left: .5rem;
+    padding-top: .4rem;
+    transition: all 0s;
+}
+#f5>div:active{
+    border: solid 1px #65e2d9;
 }
