@@ -1,28 +1,32 @@
 body{
-    background-color: #181f2a;
+    background-color: hsl(217, 28%, 15%);
     color: white;
     
+}
+nav, .illus{
+    margin: 0;
 }
 /*nav section*/
 nav{
     box-sizing: border-box;
     width: 100%;
-    height: 4.375rem;
+    height: 8rem;
     display: flex;
     padding: 0 1rem;
     padding-top: 2rem;
+    background-color: hsl(217, 28%, 15%);
 }
 .nav-container{
     box-sizing: border-box;
     width: 50%;
     height: 50px;
-    margin: 1rem;
+    margin: 0;
     padding-left: 2rem;
+ 
 }
 .menu{
     box-sizing: border-box;
     width: 100%;
-    
     display: flex;
     justify-content:end;
 }
@@ -46,18 +50,34 @@ nav>div>div>a:hover{
     font-weight: 700;
     text-decoration: underline;
 }
+
+.illus{
+    box-sizing: border-box;
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height: 55.125rem;
+    padding-top: 1rem;
+    background-color:hsl(217, 28%, 15%);
+    }
 /*header Section*/
 
 header{
     box-sizing: border-box;
     background-image: url('../images/bg-curvy-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    padding-top: 5rem;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    background-color:hsl(217, 28%, 15%)
+       
 }
 header>div{
     display: flex;
@@ -66,10 +86,7 @@ header>div{
     
     
 }
-header>div>img{
-    width: 34.375rem;
-    height: 28.125rem;
-}
+
 #header{
     box-sizing: border-box;
     display: flex;
@@ -111,14 +128,13 @@ p{
     box-sizing: border-box;
     width: 40%;
     height: 6rem;
-    background-color: hsl(176, 68%, 64%);
     background-image:linear-gradient(to right, #65e2d9, #339ecc);
     border-radius: 20px;
     padding-top: 6px; 
     transition: all 0s;
 }
-div.buttons:active{
-    
+.buttons:active{
+    background-color: #65e2d9;
 }
 div.buttons>a{
     color:white;
@@ -132,11 +148,13 @@ div.buttons>a:hover{
     
 }
 
+
+/* Main */
 main{
     background-color: #181f2a;
     display: flex;
     flex-flow: column;
-    height: 135rem;
+    height: 140rem;
 }
 section.container{
     display: flex;
@@ -171,6 +189,8 @@ h3{
     text-align: center;
     width:100%;
 }
+
+/* Main/productivity-display */
 section.productive{
     display: flex;
     width: 100%;
@@ -209,10 +229,13 @@ span{
 span:active{
     color: #ffffff;
 }
+
+
+/* Main/Testimonial */
+
 section.testimonial{
     display: flex;
     padding: 2rem 10rem;
-    
 }
 .testimonies{
     display: flex;
@@ -257,6 +280,9 @@ section.testimonial{
 .name{
     font-weight: 700;
 }
+
+
+/*  Main / Sign-up */
 select.scontainer{
     display: flex;
     justify-content: center;
@@ -270,12 +296,13 @@ section.scontainer>div{
     z-index: 1;
     right: 10%;
     left:20%;
-    top:190rem;
+    top:218rem;
     background-color: #1c2431;
     width:50%;
-    height: auto;
+    height: 23rem;
     padding: 0 5rem 0 5rem;
     border-radius: 5px;
+    box-shadow: 1px 1px hsl(218, 28%, 13%);
 
 }
 section.scontainer>div>div{
@@ -311,6 +338,7 @@ input{
     height: 30px;
     box-sizing: border-box;
     border-radius: 20px;
+    border: none;
 }
 #blue{
     width: 25%;
@@ -330,7 +358,7 @@ input{
 }
    
 
-
+/* Footer */
 
 footer{
     padding: 10rem 0 0 10rem ;
@@ -345,9 +373,6 @@ footer{
     display: flex;
     padding-top: 5rem;
     align-items: flex-start;
-    
-    
-    
 }
 #fcontainer>div{
    
@@ -414,18 +439,16 @@ footer{
 @media screen and (max-width: 764px){
     body{
         width: 100%;
-      
     }
     nav{
         width: 100%;
         box-sizing: border-box;
         display: flex;
-
+        height: 5rem;
     }
     .nav-container{
-        width: 60%;
+        width: 70%;
         height: auto;
-        
     }
     #logo{
         width: 30%;
@@ -436,16 +459,21 @@ footer{
     .menu{
         width: 100%;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: flex-end;
     }
     header{
         width: 100%;
-        height: auto;
+        height: 15rem;
         display: flex;
         flex-direction: column;
         justify-content:center;
         align-items: center;
-        background-image: url('../images/bg-curvy-mobile.svg');
+        background: url('../images/bg-curvy-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: hsl(217, 28%, 15%);
+        padding-top: 10rem;
+        
     }
     header>div{
         width: inherit;
@@ -454,8 +482,23 @@ footer{
         padding: 1rem 2rem ;
     }
     .illus{
-        width: 30rem;
-        height: 25rem;
+        
+    }
+    .illus{
+        box-sizing: border-box;
+        justify-content: center;
+        align-self: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        height: 35rem;
+        padding-top: 1rem;
+        
+        }
+    .illus>img{
+        width: 40rem;
+        height: 35rem;
     }
     #header{
         box-sizing: border-box;
@@ -494,6 +537,7 @@ footer{
     main{
         width: 100%;
         height: 240rem;
+        padding-top: 10rem;
     }
     section.container{
         display: flex;
@@ -639,7 +683,7 @@ footer{
         z-index: 1;
         right: 15%;
         left:15%;
-        top:298rem;
+        top:297rem;
         background-color: #1c2431;
         width:50%;
         height: auto;
